@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+<section class="legal-section">
+    <div class="legal-container">
+        <h1 class="legal-title">Privacy Policy</h1>
+        <p class="legal-updated">Last updated: [date]</p>
+
+        <div class="legal-note">
+            Placeholder text. Replace with your own policy, reviewed by a
+            legal professional, before launching publicly.
+        </div>
+
+        <h2>1. What we collect</h2>
+        <ul>
+            <li>Account details: your name and email address</li>
+            <li>Expense records you enter: amount, category, date and description</li>
+        </ul>
+
+        <h2>2. How we use it</h2>
+        <p>Your data is used only to provide the app: showing your expenses, totals and summaries.</p>
+
+        <h2>3. Passwords</h2>
+        <p>Passwords are stored as one-way hashes, never as plain text.</p>
+
+        <h2>4. Sharing</h2>
+        <p>We do not sell your data. [State any third parties here.]</p>
+
+        <h2>5. Your choices</h2>
+        <p>You can edit or delete your expenses at any time. To delete your account, contact [contact email].</p>
+
+        <h2>6. Contact</h2>
+        <p>Questions about privacy: [contact email]. See also our <a href="{{ url_for('terms') }}">Terms and Conditions</a>.</p>
+    </div>
+</section>
+{% endblock %}
